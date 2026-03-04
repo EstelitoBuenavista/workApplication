@@ -1,0 +1,135 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+  padding: 10px 20px;
+}
+
+/* Title */
+.title {
+  text-align: center;
+  transform: translateX(-60px);
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 16px;
+}
+
+/* Question Card */
+.question-card {
+  background-color: #ffffff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  padding: 0;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.question-border {
+  height: 4px;
+  background-color: #111f5c;
+  width: 100%;
+}
+
+.question-text {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 24px 10px 24px;
+}
+
+/* Options Row */
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 0 100px 20px 100px;
+}
+
+/* Option Button */
+.option-button {
+  padding: 10px 16px;
+  border: 2px solid #ccc;
+  background-color: #ffffff;
+  color: #666;
+  font-size: 13px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease;
+  border-radius: 10px;
+}
+
+.option-button:hover {
+  background-color: #e8ecf5;
+  border-color: #111f5c;
+}
+
+.option-button.selected {
+  background-color: #111f5c;
+  color: #ffffff;
+  border-color: #111f5c;
+  font-weight: 600;
+}
+
+/* Submit Row */
+.submit-row {
+  margin-top: 8px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.submit-button {
+  background-color: #6e6d6d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 12px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: #525151;
+}
+
+/* Error */
+.error-text {
+  color: #d32f2f;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Success */
+.success-message {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 40px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.success-message h2 {
+  color: #4caf50;
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.success-message p {
+  color: #555;
+  font-size: 16px;
+}
